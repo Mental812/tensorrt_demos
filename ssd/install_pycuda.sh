@@ -15,7 +15,7 @@ mkdir -p $folder
 
 echo "** Install requirements"
 sudo apt-get install -y build-essential python3-dev
-sudo apt-get install -y libboost-python-dev libboost-thread-dev
+sudo apt-get install -y libboost-python-dev libboost-thread-dev libprotobuf-dev protobuf-compiler
 sudo pip3 install setuptools
 
 boost_pylib=$(basename /usr/lib/${arch}-linux-gnu/libboost_python*-py3?.so)
